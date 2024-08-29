@@ -5,7 +5,7 @@ defmodule Nex.MixProject do
     [
       app: :nex,
       version: "0.1.0",
-      elixir: "~> 1.12",
+      elixir: "~> 1.17",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       name: "Nex",
@@ -33,18 +33,18 @@ defmodule Nex.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:bandit, "~> 0.6"},
+      {:bandit, "~> 0.7"},
       {:cors_plug, "~> 3.0"},
-      {:ecto_sql, "~> 3.9"},
+      {:ecto_sql, "~> 3.11"},
       {:ets, "~> 0.9"},
-      {:ex_doc, "~> 0.29", only: :dev, runtime: false},
-      {:hammer, "~> 6.1"},
+      {:ex_doc, "~> 0.34", only: :dev, runtime: false},
+      {:hammer, "~> 6.2"},
       {:jason, "~> 1.4"},
-      {:k256, "~> 0.0.6"},
+      {:k256, "~> 0.0.8"},
       {:mint_web_socket, "~> 1.0", only: :test},
       {:phoenix_pubsub, "~> 2.1"},
-      {:plug, "~> 1.14"},
-      {:postgrex, "~> 0.16"},
+      {:plug, "~> 1.16"},
+      {:postgrex, "~> 0.19"},
     ]
   end
 
